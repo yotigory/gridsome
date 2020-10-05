@@ -1,7 +1,7 @@
 <template>
   <Layout>
   <article>
-    <h1 class="h2 mb-3">「Gridsomeでやってみよう！」について</h1>
+    <h1 class="h2 mb-3">「Gridsomeでいこう！」について</h1>
     <p>時代はJamstackへ…という流れも感じつつ。<br>いつもの思い付きで「Gridsome」やってみっか！というスタンスで始めています。</p>
     <p>最終的にやりたいことは、Headless CMSとの連携。とその前にNetliyとGithubを連携してまずは公開したい！</p>
     <h2 class="h3 mt-5 mb-3">私について</h2>
@@ -15,7 +15,7 @@
 <script>
 export default {
   metaInfo: {
-    title: '「Gridsomeでやってみよう！」について'
+    title: '「Gridsomeでいこう！」について'
   }
 }
 </script>
