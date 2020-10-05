@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <article>
-    <h1>{{ $page.stepPost.title }}</h1>
+    <article class="Step">
+    <h1 class="h2 mb-5">{{ $page.stepPost.title }}</h1>
     <VueRemarkContent />
   </article>
   </Layout>
@@ -12,7 +12,8 @@
     stepPost(id: $id) {
       title
       tag
-      date
+      createdAt
+      updatedAt
       content
     }
   }

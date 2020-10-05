@@ -14,7 +14,7 @@
   </b-navbar>
 </header>
 
-<main class="container">
+<main class="container pb-5">
     <slot/><!-- Page content will be inserted here -->
   </main>
   </div>
