@@ -1,10 +1,13 @@
 <template>
   <Layout>
   <article>
-  <h1 class="h2 mb-5">このサイトができるまでの道のり</h1>
-  <ul>
+    <b-jumbotron bg-variant="white" text-variant="info" border-variant="info">
+    <h1>このサイトができるまでの道のり</h1>
+    <hr class="my-4">
+      <ul>
     <li class="mb-3" v-for="steplist in $page.steplist.edges" :key="steplist.id">{{steplist.node.updatedAt}}<br><a :href="steplist.node.path">{{ steplist.node.title }}</a></li>
   </ul>
+  </b-jumbotron>
   </article>
   </Layout>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1>Blog</h1>
-    <p>そのうちになんか書く。。。</p>
+    <p>そのうちになんか書く。。。Headlessで</p>
   </Layout>
 </template>
 

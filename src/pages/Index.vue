@@ -1,10 +1,20 @@
 <template>
   <Layout>
   <article>
-    <h1 class="h2 mb-3">「Gridsomeでいこう！」について</h1>
-    <p>時代はJamstackへ…という流れも感じつつ。<br>いつもの思い付きで「Gridsome」やってみっか！というスタンスで始めています。</p>
-    <p>最終的にやりたいことは、Headless CMSとの連携。とその前にNetliyとGithubを連携してまずは公開したい！</p>
-    <p><a class="btn btn-outline-info mr-3" href="https://github.com/yotigory/gridsome">Github</a></p>
+
+  <b-jumbotron bg-variant="white" text-variant="info" border-variant="info">
+    <h1>このサイトについて</h1>
+    <p>
+      かなり思い付きで立ち上げましたが、時代はJamstackへ…という流れも感じつつ。<br>軽いノリで「Gridsome」やってみっか！というスタンスで始めています。
+    </p>
+    <hr class="my-4">
+    <p>
+      NetliyとGithubを連携してまずは公開は出来たので、<br>次のゴールはWordPressと連携してBlogをHeadlessで更新する！です。
+    </p>
+    <b-button variant="info" href="https://github.com/yotigory/gridsome">Github</b-button>
+  </b-jumbotron>
+
+
     <h2 class="h3 mt-5 mb-3">頼るべきはやはり公式サイト</h2>
     <p>英語とはいえ本当に見やすいしわかりやす～</p>
     <p><a class="btn btn-outline-info mr-3" href="https://gridsome.org/">A Jamstack framework for Vue.js</a></p>
@@ -24,7 +34,7 @@
 <script>
 export default {
   metaInfo: {
-    title: '「Gridsomeでいこう！」について'
+    title: 'Gridsomeでいこう！'
   }
 }
 </script>

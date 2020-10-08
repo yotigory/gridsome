@@ -3,14 +3,13 @@
 /* font-family: 'Noto Sans JP', sans-serif; */
 /* font-family: 'Noto Serif JP', serif; */
 
-
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Noto Sans JP" , "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, 'Open Sans', sans-serif;
 }
-.SerifTitle{
-  font-family: 'Noto Serif JP', serif;
-  font-weight: 700;
+.text-info {
+  color: #09444D !important;
 }
+
 
 .Step h2{
   margin: 1.8em 0 1em 0;
