@@ -8,6 +8,7 @@
 <static-query>
 query {
   metadata {
+    siteName
     pageUrl
   }
 }
