@@ -6,6 +6,14 @@
 
 module.exports = {
   siteName: 'Gridsomeでいこう！',
+  metadata: {
+    siteName: 'Gridsomeでいこう！',
+    siteDescription: 'かなり思い付きで立ち上げましたが、時代はJamstackへ…という流れも感じつつ。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
+    pageUrl: 'https://quirky-noyce-a7e03d.netlify.app/',
+    pageTitle: 'Gridsomeでいこう！',
+    siteOgImage: './src/assets/og.png',
+    siteOgType: 'article',
+  },
   plugins: [
     {
       use: '@gridsome/vue-remark',
