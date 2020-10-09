@@ -8,8 +8,9 @@ module.exports = {
   siteName: 'Gridsomeでいこう！',
   metadata: {
     siteName: 'Gridsomeでいこう！',
+    siteUrl: 'https://quirky-noyce-a7e03d.netlify.app/',
     siteDescription: 'かなり思い付きで立ち上げましたが、時代はJamstackへ…という流れも感じつつ。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
-    pageUrl: 'https://quirky-noyce-a7e03d.netlify.app/',
+    pageUrl: 'index.html',
     pageTitle: 'Gridsomeでいこう！',
     siteOgImage: 'og.png',
     siteOgType: 'article',

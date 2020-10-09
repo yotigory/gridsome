@@ -33,8 +33,8 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: 'Gridsomeでいこう！'
-  }
+  metadata: {
+    siteOgType: 'website',
+  },
 }
 </script>

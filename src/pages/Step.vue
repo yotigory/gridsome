@@ -14,8 +14,10 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: 'このサイトができるまでの道のり'
+  metadata: {
+    siteDescription: 'このサイトができるまでの道のりの記事のリストページです。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
+    pageUrl: '/step/index.html',
+    pageTitle: 'このサイトができるまでの道のり',
   },
 }
 </script>

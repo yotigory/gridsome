@@ -29,12 +29,12 @@ export default {
         {
           key: 'og:url',
           property: 'og:url',
-          content: this.$static.metadata.pageUrl,
+          content: '${this.$static.metadata.siteurl} + ${this.$static.metadata.pageUrl}',
         },
         {
           key: 'og:Title',
           property: 'og:Title',
-          content: this.$static.metadata.pageTitle,
+          content: '${this.$static.metadata.pageTitle} | ${this.$static.metadata.siteName}',
         },
         {
           key: 'og:description',

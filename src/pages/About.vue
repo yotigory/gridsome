@@ -17,8 +17,10 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: 'わたしについて'
-  }
+  metadata: {
+    siteDescription: 'このサイト「Gridsomeでいこう！」を制作した私の紹介ページ',
+    pageUrl: '/about/index.html',
+    pageTitle: 'わたしについて',
+  },
 }
 </script>
