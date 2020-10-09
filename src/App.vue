@@ -20,8 +20,6 @@ export default {
   metaInfo() {
     return {
       meta: [
-        { property: 'charset', content: 'UTF-8'},
-        { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
         { key: 'description', name: 'description', content: this.$static.metadata.siteDescription},
         {
           key: 'og:site_name',
