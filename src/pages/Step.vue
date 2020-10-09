@@ -31,35 +31,39 @@
   }
 </page-query>
 
+<static-query>
+query {
+  metadata {
+    siteName
+    pageUrl
+  }
+}
+</static-query>
+
 <script>
 export default {
-  metadata: {
-    pageDescription: 'このサイトができるまでの道のりの記事のリストページです。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
-    pageUrl: '/step/index.html',
-    pageTitle: 'このサイトができるまでの道のり',
-  },
   metaInfo() {
     return {
       meta: [
         {
           key: 'description',
           name: 'description',
-          content: this.$page.metadata.pageDescription,
+          content: 'このサイトができるまでの道のりの記事のリストページです。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
           },
         {
           key: 'og:url',
           property: 'og:url',
-          content: this.$static.metadata.pageUrl+'this.$page.metadata.pageUrl',
+          content: this.$static.metadata.pageUrl+'/step/',
         },
         {
           key: 'og:title',
           property: 'og:title',
-          content: this.$page.metadata.pageTitle + ' | ' + this.$static.metadata.siteName,
+          content: 'このサイトができるまでの道のり'+ ' | ' + this.$static.metadata.siteName,
         },
         {
           key: 'og:description',
           property: 'og:description',
-          content: this.$page.metadata.pageDescription,
+          content: 'このサイトができるまでの道のりの記事のリストページです。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
         },
       ]
     }
