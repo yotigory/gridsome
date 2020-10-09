@@ -9,15 +9,3 @@ body {
 .text-info {
   color: #09444D !important;
 }
-
-
-.Step h2{
-  margin: 1.8em 0 1em 0;
-  font-size: 1.75rem;
-}
-.Step pre{
-  background-color: #000;
-  border-radius: 4px;
-  padding: 5px 10px;
-  color: #FFF;
-}

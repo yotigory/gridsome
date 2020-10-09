@@ -22,3 +22,21 @@
     }
   }
 </page-query>
+
+<style>
+.Step h2{
+  margin: 1.8em 0 1em 0;
+  font-size: 1.75rem;
+}
+.Step pre{
+  background-color: #000;
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: #FFF;
+}
+.Step blockquote{
+  padding: 10px 10px 5px 15px;
+  border-left: solid 5px #CCC ;
+  background-color:#f8f9fa;
+}
+</style>
