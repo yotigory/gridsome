@@ -18,6 +18,7 @@
 <static-query>
 query {
   metadata {
+    siteName
     pageUrl
   }
 }
@@ -41,7 +42,7 @@ export default {
         {
           key: 'og:title',
           property: 'og:title',
-          content: 'わたしについて',
+          content: 'わたしについて'+ ' | ' + this.$static.metadata.siteName,
         },
         {
           key: 'og:description',
