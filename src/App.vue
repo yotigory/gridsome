@@ -53,22 +53,7 @@ export default {
         },
         {
           name: 'twitter:card',
-          content: 'Summary Card',
-        },
-        {
-          key: 'twitter:title',
-          name: 'twitter:title',
-          content: this.$static.metadata.pageTitle,
-        },
-        {
-          key: 'twitter:description',
-          name: 'twitter:description',
-          content: this.$static.metadata.siteDescription,
-        },
-        {
-          key: 'twitter:image',
-          name: 'twitter:image',
-          content: this.$static.metadata.siteOgImage,
+          content: 'summary',
         },
       ]
     }
