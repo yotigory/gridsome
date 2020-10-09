@@ -12,16 +12,6 @@
   </Layout>
 </template>
 
-<script>
-export default {
-  metadata: {
-    siteDescription: 'このサイトができるまでの道のりの記事のリストページです。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
-    pageUrl: '/step/index.html',
-    pageTitle: 'このサイトができるまでの道のり',
-  },
-}
-</script>
-
 <page-query>
   query {
     steplist: allStepPost(sortBy: "updatedAt", order: ASC)  {
@@ -33,6 +23,46 @@ export default {
           updatedAt (format: "YYYY年M月D日")
         }
       }
-    }
+    },
+  metadata {
+    siteName
+    pageUrl
+  }
   }
 </page-query>
+
+<script>
+export default {
+  metadata: {
+    pageDescription: 'このサイトができるまでの道のりの記事のリストページです。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
+    pageUrl: '/step/index.html',
+    pageTitle: 'このサイトができるまでの道のり',
+  },
+  metaInfo() {
+    return {
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: this.$page.metadata.pageDescription,
+          },
+        {
+          key: 'og:url',
+          property: 'og:url',
+          content: this.$static.metadata.pageUrl+'this.$page.metadata.pageUrl',
+        },
+        {
+          key: 'og:title',
+          property: 'og:title',
+          content: this.$page.metadata.pageTitle + ' | ' + this.$static.metadata.siteName,
+        },
+        {
+          key: 'og:description',
+          property: 'og:description',
+          content: this.$page.metadata.pageDescription,
+        },
+      ]
+    }
+  }
+}
+</script>
