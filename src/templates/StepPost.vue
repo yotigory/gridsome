@@ -15,6 +15,7 @@
   query StepPost($id: ID!) {
     stepPost(id: $id) {
       title
+      path
       tag
       createdAt (format: "YYYY年M月D日")
       updatedAt (format: "YYYY年M月D日")
@@ -22,6 +23,46 @@
     }
   }
 </page-query>
+
+<static-query>
+query {
+  metadata {
+    siteName
+    pageUrl
+  }
+}
+</static-query>
+
+<script>
+export default {
+  metaInfo() {
+    return {
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: this.$page.stepPost.title+'の記事ページです。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
+          },
+        {
+          key: 'og:url',
+          property: 'og:url',
+          content: this.$static.metadata.pageUrl+this.$page.stepPost.path,
+        },
+        {
+          key: 'og:title',
+          property: 'og:title',
+          content: this.$page.stepPost.title + ' | ' + this.$static.metadata.siteName,
+        },
+        {
+          key: 'og:description',
+          property: 'og:description',
+          content: this.$page.stepPost.title+'の記事ページです。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
+        },
+      ]
+    }
+  }
+}
+</script>
 
 <style>
 .Step h2{
