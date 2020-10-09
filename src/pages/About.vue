@@ -15,12 +15,41 @@
   </Layout>
 </template>
 
+<static-query>
+query {
+  metadata {
+    pageUrl
+  }
+}
+</static-query>
+
 <script>
 export default {
-  metadata: {
-    siteDescription: 'このサイト「Gridsomeでいこう！」を制作した私の紹介ページ',
-    pageUrl: '/about/index.html',
-    pageTitle: 'わたしについて',
-  },
+  metaInfo() {
+    return {
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: 'このサイト「Gridsomeでいこう！」を制作している私についてのページです。',
+          },
+        {
+          key: 'og:url',
+          property: 'og:url',
+          content: this.$static.metadata.pageUrl+'/about/',
+        },
+        {
+          key: 'og:title',
+          property: 'og:title',
+          content: 'わたしについて',
+        },
+        {
+          key: 'og:description',
+          property: 'og:description',
+          content: 'このサイト「Gridsomeでいこう！」を制作している私についてのページです。',
+        },
+      ]
+    }
+  }
 }
 </script>

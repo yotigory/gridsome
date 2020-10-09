@@ -31,10 +31,21 @@
   </Layout>
 </template>
 
+
+
+
 <script>
 export default {
-  metadata: {
-    siteOgType: 'website',
-  },
+  metaInfo() {
+    return {
+      meta: [
+        {
+          key: 'og:type',
+          property: 'og:type',
+          content: 'website',
+        },
+      ]
+    }
+  }
 }
 </script>

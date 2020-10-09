@@ -20,7 +20,11 @@ export default {
   metaInfo() {
     return {
       meta: [
-        { key: 'description', name: 'description', content: this.$static.metadata.siteDescription},
+        {
+          key: 'description',
+          name: 'description',
+          content: this.$static.metadata.siteDescription
+          },
         {
           key: 'og:site_name',
           property: 'og:site_name',
@@ -29,12 +33,12 @@ export default {
         {
           key: 'og:url',
           property: 'og:url',
-          content: this.$static.metadata.siteurl + this.$static.metadata.pageUrl,
+          content: this.$static.metadata.pageUrl,
         },
         {
-          key: 'og:Title',
-          property: 'og:Title',
-          content: this.$static.metadata.pageTitle + ' | ' + this.$static.metadata.siteName,
+          key: 'og:title',
+          property: 'og:title',
+          content: this.$static.metadata.pageTitle,
         },
         {
           key: 'og:description',
