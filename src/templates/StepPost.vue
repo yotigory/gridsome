@@ -66,8 +66,12 @@ export default {
 
 <style>
 .Step h2{
-  margin: 1.8em 0 1em 0;
+  margin: 2em 0 1em 0;
   font-size: 1.75rem;
+}
+.Step h3{
+  margin: 1.5em 0 1em 0;
+  font-size: 1.5rem;
 }
 .Step pre{
   background-color: #000;
