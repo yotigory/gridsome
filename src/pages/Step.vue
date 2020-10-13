@@ -1,6 +1,6 @@
 <template>
   <Layout>
-  <article>
+  <article class="Step">
     <b-jumbotron bg-variant="white" text-variant="info" border-variant="info">
     <h1>このサイトができるまでの道のり</h1>
     <hr class="my-4">
@@ -70,3 +70,26 @@ export default {
   }
 }
 </script>
+
+<style>
+.Step .jumbotron{
+  position: relative;
+  border-radius: 0;
+}
+.Step .jumbotron.border-info{
+  border-color: #887E89!important;;
+}
+.Step .jumbotron::after{
+  position: absolute;
+  content: "";
+  top:7px;
+  left:7px;
+  right: -7px;
+  bottom: -7px;
+  background-color: #887E89;
+  z-index: -99;
+}
+.Step .border-info {
+  border-color: #BE8F05 !important;
+}
+</style>

@@ -81,7 +81,7 @@ export default {
 }
 .Step blockquote{
   padding: 10px 10px 5px 15px;
-  border-left: solid 5px #CCC ;
-  background-color:#f8f9fa;
+  border-left: solid 5px #887E89 ;
+  background-color:#DFDFD7;
 }
 </style>

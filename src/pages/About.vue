@@ -1,10 +1,10 @@
 <template>
   <Layout>
-  <article>
+  <article class="About">
     <b-jumbotron bg-variant="white" text-variant="info" border-variant="info">
     <h1>わたしについて</h1>
     <hr class="my-4">
-    <g-image src="~/assets/img/yotigory.png" width="150" class="img-thumbnail mb-2" alt="よちごりーのアイコン"/>
+    <g-image src="~/assets/img/yotigory_01.png" width="200" class="mx-auto d-block  mt-5 mb-5" alt="よちごりーのアイコン"/>
     <p>Web制作会社でHTML,CSS,JSやってます。最近はVue.js楽しいですね～<br>とはいえまだまだわからないことが多いです (;^_^A</p>
     <p>テクノ図工部、カメラとお散歩部、チェアリング部。<br>趣味は睡眠。みんなでワイワイ飲んだりするのが好きです♪</p>
     <p>気分でフラリとおでかけします。</p>
@@ -54,3 +54,37 @@ export default {
   }
 }
 </script>
+
+<style>
+.About .jumbotron{
+  position: relative;
+  border-radius: 0;
+}
+.About .jumbotron.border-info{
+  border-color: #BE8F05!important;;
+}
+.About .jumbotron::after{
+  position: absolute;
+  content: "";
+  top:7px;
+  left:7px;
+  right: -7px;
+  bottom: -7px;
+  background-color: #BE8F05;
+  z-index: -99;
+}
+.About .btn-outline-info {
+  color: #BE8F05;
+  border-color: #BE8F05;
+}
+.About .btn-outline-info:not(:disabled):not(.disabled):active,
+.About .btn-outline-info:not(:disabled):not(.disabled).active,
+.About .show > .btn-outline-info.dropdown-toggle {
+  background-color: #BE8F05;
+  border-color: #BE8F05;
+}
+.About .btn-outline-info:hover {
+  color: #fff;
+  background-color: #BE8F05;
+}
+</style>
