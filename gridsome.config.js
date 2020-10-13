@@ -24,6 +24,12 @@ module.exports = {
         pathPrefix: '/step', // URLになるパス。必須ではない。
         template: './src/templates/StepPost.vue' // 記事ページのVueコンポーネントファイルの指定
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-180466873-1'
+      }
     }
   ],
 }

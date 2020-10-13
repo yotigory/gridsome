@@ -9,7 +9,7 @@
     <p>テクノ図工部、カメラとお散歩部、チェアリング部。<br>趣味は睡眠。みんなでワイワイ飲んだりするのが好きです♪</p>
     <p>気分でフラリとおでかけします。</p>
     <p><a class="btn btn-outline-info mr-3" href="https://www.facebook.com/yoshiko.sarakai">Facebook</a>
-    <a class="btn btn-outline-info" href="https://twitter.com/yotigory">Twitter</a></p>
+    <a class="btn btn-outline-info mr-3" href="https://twitter.com/yotigory">Twitter</a><a class="btn btn-outline-info" href="https://www.instagram.com/yotigory_/">Instagram</a></p>
     <p><a class="btn btn-outline-info btn-sm mr-3" href="https://www.tekunozukoubu.net/">テクノ図工部</a>
     <a class="btn btn-outline-info btn-sm mr-3" href="https://codingmania.net/">CodingMania</a>
     <a class="btn btn-outline-info btn-sm" href="https://sentimental.space/">ポエミーサイト</a></p>
