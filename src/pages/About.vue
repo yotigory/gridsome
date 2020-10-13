@@ -10,6 +10,9 @@
     <p>気分でフラリとおでかけします。</p>
     <p><a class="btn btn-outline-info mr-3" href="https://www.facebook.com/yoshiko.sarakai">Facebook</a>
     <a class="btn btn-outline-info" href="https://twitter.com/yotigory">Twitter</a></p>
+    <p><a class="btn btn-outline-info btn-sm mr-3" href="https://www.tekunozukoubu.net/">テクノ図工部</a>
+    <a class="btn btn-outline-info btn-sm mr-3" href="https://codingmania.net/">CodingMania</a>
+    <a class="btn btn-outline-info btn-sm" href="https://sentimental.space/">ポエミーサイト</a></p>
   </b-jumbotron>
     </article>
   </Layout>

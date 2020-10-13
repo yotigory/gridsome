@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <article class="Step">
+    <article class="StepPost">
     <h1 class="h2 mb-3 text-info">{{ $page.stepPost.title }}</h1>
     <div class="border-top border-bottom border-info pt-2 pr-2">
     <p class="h6 text-right">投稿日：{{ $page.stepPost.createdAt }}</p>
@@ -65,23 +65,26 @@ export default {
 </script>
 
 <style>
-.Step h2{
+.StepPost h2{
   margin: 2em 0 1em 0;
   font-size: 1.75rem;
 }
-.Step h3{
+.StepPost h3{
   margin: 1.5em 0 1em 0;
   font-size: 1.5rem;
 }
-.Step pre{
+.StepPost pre{
   background-color: #000;
   border-radius: 4px;
   padding: 5px 10px;
   color: #FFF;
 }
-.Step blockquote{
+.StepPost blockquote{
   padding: 10px 10px 5px 15px;
   border-left: solid 5px #887E89 ;
   background-color:#DFDFD7;
+}
+.StepPost .border-info {
+  border-color: #BE8F05 !important;
 }
 </style>

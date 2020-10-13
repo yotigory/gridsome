@@ -9,3 +9,14 @@ body {
 .text-info {
   color: #664960 !important;
 }
+
+.Step h1{
+  position: relative;
+}
+.Step .Bgimg{
+  position: absolute;
+  top:-50px;
+  right: 30px;
+  /* transform: rotate(15deg); */
+  z-index: -1;
+}

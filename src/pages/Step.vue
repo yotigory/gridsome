@@ -7,6 +7,7 @@
       <ul>
     <li class="mb-3" v-for="steplist in $page.steplist.edges" :key="steplist.id">{{steplist.node.updatedAt}}<br><a :href="steplist.node.path">{{ steplist.node.title }}</a></li>
   </ul>
+  <g-image src="~/assets/img/yotigory_02.png" class="Bgimg" width="60px" alt="よちごりーのアイコン"/>
   </b-jumbotron>
   </article>
   </Layout>
@@ -89,7 +90,5 @@ export default {
   background-color: #887E89;
   z-index: -99;
 }
-.Step .border-info {
-  border-color: #BE8F05 !important;
-}
+
 </style>
