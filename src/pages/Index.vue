@@ -1,6 +1,6 @@
 <template>
   <Layout>
-  <article>
+  <article class="Top">
 
   <b-jumbotron bg-variant="white" text-variant="info" border-variant="info">
     <h1>このサイトについて</h1>
@@ -49,3 +49,22 @@ export default {
   }
 }
 </script>
+
+<style>
+.Top .jumbotron{
+  position: relative;
+  border-radius: 0;
+}
+.Top .jumbotron.border-info{
+}
+.Top .jumbotron::after{
+  position: absolute;
+  content: "";
+  top:7px;
+  left:7px;
+  right: -7px;
+  bottom: -7px;
+  background-color: #17a2b8;
+  z-index: -99;
+}
+</style>
