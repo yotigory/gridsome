@@ -5,7 +5,7 @@
     <h1>このサイトができるまでの道のり</h1>
     <hr class="my-4">
       <ul>
-    <li class="mb-3" v-for="steplist in $page.steplist.edges" :key="steplist.id">{{steplist.node.updatedAt}}<br><a :href="steplist.node.path">{{ steplist.node.title }}</a></li>
+    <li class="mb-3" v-for="steplist in $page.steplist.edges" :key="steplist.id">{{steplist.node.createdAt}}<br><a :href="steplist.node.path">{{ steplist.node.title }}</a></li>
   </ul>
   <g-image src="~/assets/img/yotigory_02.png" class="Bgimg" width="60px" alt="よちごりーのアイコン"/>
   </b-jumbotron>
@@ -15,13 +15,13 @@
 
 <page-query>
   query {
-    steplist: allStepPost(sortBy: "updatedAt", order: ASC)  {
+    steplist: allStepPost(sortBy: "createdAt", order: ASC)  {
       edges {
         node {
           id
           title
           path
-          updatedAt (format: "YYYY年M月D日")
+          createdAt (format: "YYYY年M月D日")
         }
       }
     },
