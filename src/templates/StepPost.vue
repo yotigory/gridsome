@@ -7,6 +7,15 @@
     <p class="h6 text-right">更新日：{{ $page.stepPost.updatedAt }}</p>
     </div>
     <VueRemarkContent />
+  <div class="row mt-5">
+    <div class="col">
+      <p class="d-flex align-items-center"><b-icon-arrow-left-circle-fill font-scale="2" class="mr-2"></b-icon-arrow-left-circle-fill font-scale="2"><a :href="'/step/'+ $page.stepPost.prevpage + '/'">前のページへ</a></p>
+    </div>
+    <div class="col">
+      <p v-if="$page.stepPost.nextpage !== null" class="d-flex align-items-center justify-content-end"><a :href="'/step/'+ $page.stepPost.nextpage + '/'">次のページへ</a><b-icon-arrow-right-circle-fill font-scale="2" class="ml-2"></b-icon-arrow-right-circle-fill font-scale="2"></p>
+    </div>
+  </div>
+  <p class="d-flex align-items-center justify-content-center"><b-icon-arrow-up-circle-fill font-scale="2" class="mr-2"></b-icon-arrow-up-circle-fill font-scale="2"><a href="/step/">目次ページに戻る</a></p>
   </article>
   </Layout>
 </template>
@@ -19,6 +28,8 @@
       tag
       createdAt (format: "YYYY年M月D日")
       updatedAt (format: "YYYY年M月D日")
+      nextpage
+      prevpage
       content
     }
   }
@@ -73,6 +84,10 @@ export default {
   margin: 1.5em 0 1em 0;
   font-size: 1.5rem;
 }
+.StepPost strong{
+  font-weight: normal;
+  color: #dc3545 !important
+}
 .StepPost pre{
   background-color: #000;
   border-radius: 4px;
@@ -86,5 +101,10 @@ export default {
 }
 .StepPost .border-info {
   border-color: #BE8F05 !important;
+}
+.bi-arrow-left-circle-fill,
+.bi-arrow-right-circle-fill,
+.bi-arrow-up-circle-fill {
+  color:#BE8F05;
 }
 </style>

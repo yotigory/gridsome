@@ -20,3 +20,8 @@ body {
   /* transform: rotate(15deg); */
   z-index: -1;
 }
+
+.StepPost strong{
+  font-weight: normal;
+  color: #dc3545 !important
+}
