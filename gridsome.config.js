@@ -34,7 +34,8 @@ module.exports = {
     {
       use: '@gridsome/source-wordpress',
       options: {
-        baseUrl: 'http://gogogridsome.backdrop.jp/', // url
+        // baseUrl: 'http://gogogridsome.backdrop.jp/', // url
+        baseUrl: 'https://gridsome.work/', // url
         apiBase: 'wp-json',
         typeName: 'WordPress',
         perPage: 10,
