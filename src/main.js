@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import '~/assets/css/style.css'
-
+import '~/assets/css/wp_style.css'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component

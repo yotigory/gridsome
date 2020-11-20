@@ -30,6 +30,27 @@ module.exports = {
       options: {
         id: 'UA-180466873-1'
       }
+    },
+    {
+      use: '@gridsome/source-wordpress',
+      options: {
+        baseUrl: 'http://gogogridsome.backdrop.jp/', // url
+        apiBase: 'wp-json',
+        typeName: 'WordPress',
+        perPage: 10,
+        concurrent: 1,
+        customEndpoints: [
+          {
+              typeName: "DiaryPost", //カスタム投稿タイプ用
+              route: "/wp/v2/diary", //カスタム投稿タイプ用のURL
+              normalize: true,
+          },
+      ]
+      }
     }
   ],
+  templates: {
+    WordPressPost: "/wp/:id/", //出力するURLの指定
+    DiaryPost: "/blog/:id/" //出力するURLの指定
+  },
 }
