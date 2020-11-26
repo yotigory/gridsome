@@ -34,6 +34,7 @@ query {
 export default {
   metaInfo() {
     return {
+      title: this.$page.diaryPost.title + ' | ' + this.$static.metadata.siteName,
       meta: [
         {
           key: 'description',
