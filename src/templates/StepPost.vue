@@ -48,6 +48,7 @@ query {
 export default {
   metaInfo() {
     return {
+      title: this.$page.stepPost.title + ' | ' + this.$static.metadata.siteName,
       meta: [
         {
           key: 'description',

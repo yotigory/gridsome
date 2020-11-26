@@ -31,6 +31,7 @@ query {
 export default {
   metaInfo() {
     return {
+      title: 'わたしについて'+this.$static.metadata.siteName,
       meta: [
         {
           key: 'description',

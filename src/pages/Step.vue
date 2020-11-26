@@ -45,6 +45,7 @@ query {
 export default {
   metaInfo() {
     return {
+      title: 'このサイトができるまでの道のり'+this.$static.metadata.siteName,
       meta: [
         {
           key: 'description',
