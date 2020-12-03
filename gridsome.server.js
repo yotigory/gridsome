@@ -5,12 +5,21 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  })
+const axios = require('axios')
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
+module.exports = function (api) {
+  api.loadSource(async actions => {
+    const { data } = await axios.get('https://gridsome.work/wp-json/wp/v2/diary?_embed')
+
+    const collection = actions.addCollection('Diarylist')
+
+    for (const item of data) {
+      collection.addNode({
+        id: item.id,
+        title: item.title.rendered,
+        date: item.date,
+        thumbnail: item._embedded['wp:featuredmedia'][0].source_url
+      })
+    }
   })
 }

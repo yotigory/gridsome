@@ -13,15 +13,43 @@ body {
 .Step h1{
   position: relative;
 }
-.Step .Bgimg{
+.Step .Bgimg,
+.Blog .Bgimg{
   position: absolute;
   top:-50px;
   right: 30px;
-  /* transform: rotate(15deg); */
   z-index: -1;
 }
-
 .StepPost strong{
   font-weight: normal;
   color: #dc3545 !important
+}
+
+ul.Boxlink{
+  margin: 0;
+  padding:0;
+  list-style-type:none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+ul.Boxlink li{
+  width: 32%;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width:800px) {
+  ul.Boxlink li{
+    width: 48%;
+  }
+}
+ul.Boxlink::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 0;
+}
+@media only screen and (max-width:800px) {
+  ul.Boxlink::after {
+    display: none;
+  }
 }

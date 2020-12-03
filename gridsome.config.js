@@ -43,7 +43,7 @@ module.exports = {
         customEndpoints: [
           {
               typeName: "DiaryPost", //カスタム投稿タイプ用
-              route: "/wp/v2/diary", //カスタム投稿タイプ用のURL
+              route: "/wp/v2/diary?_embed", //カスタム投稿タイプ用のURL
               normalize: true,
           },
       ]
