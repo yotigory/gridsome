@@ -2,7 +2,8 @@
   <Layout>
   <article class="Step">
     <b-jumbotron bg-variant="white" text-variant="info" border-variant="info">
-    <h1>このサイトができるまでの道のり</h1>
+    <h1>gridsomeについて</h1>
+    <p>このサイトができるまでの道のり</p>
     <hr class="my-4">
       <ul>
     <li class="mb-3" v-for="steplist in $page.steplist.edges" :key="steplist.id">{{steplist.node.createdAt}}<br><a :href="steplist.node.path">{{ steplist.node.title }}</a></li>
