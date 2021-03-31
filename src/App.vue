@@ -21,6 +21,11 @@ export default {
     return {
       meta: [
         {
+          key: 'google-site-verification',
+          name: 'google-site-verification',
+          content: 'C83xiBX1UAQqYovGVbKoxlpsPq-kDuH7iDtaFbZU4_M'
+          },
+        {
           key: 'description',
           name: 'description',
           content: this.$static.metadata.siteDescription
