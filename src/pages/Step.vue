@@ -2,7 +2,7 @@
   <Layout>
   <article class="Step">
     <b-jumbotron bg-variant="white" text-variant="info" border-variant="info">
-    <h1>gridsomeについて</h1>
+    <h1>Gridsomeについて</h1>
     <p>このサイトができるまでの道のり</p>
     <hr class="my-4">
       <ul>

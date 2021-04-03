@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'Gridsomeでいこう！',
+  siteUrl: 'https://gogridsome.work/',
   metadata: {
     siteName: 'Gridsomeでいこう！',
     siteUrl: 'https://quirky-noyce-a7e03d.netlify.app/',
@@ -47,6 +48,30 @@ module.exports = {
               normalize: true,
           },
       ]
+      }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        exclude: [],
+        config: {
+          '/about/*': {
+            changefreq: 'weekly',
+            priority: 0.5
+          },
+          '/step/*': {
+            changefreq: 'weekly',
+            priority: 0.5
+          },
+          '/blog/*': {
+            changefreq: 'weekly',
+            priority: 0.5
+          },
+          '/shopify/*': {
+            changefreq: 'weekly',
+            priority: 0.5
+          },
+        }
       }
     }
   ],
