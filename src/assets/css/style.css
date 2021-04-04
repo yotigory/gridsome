@@ -4,7 +4,7 @@
 /* font-family: 'Noto Serif JP', serif; */
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Noto Sans JP" , "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, 'Open Sans', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Noto Sans JP" , "Hiragino Kaku Gothic ProN", Meiryo, 'Open Sans', sans-serif;
 }
 .text-info {
   color: #664960 !important;
@@ -14,7 +14,8 @@ body {
   position: relative;
 }
 .Step .Bgimg,
-.Blog .Bgimg{
+.Blog .Bgimg,
+.Shopify .Bgimg{
   position: absolute;
   top:-50px;
   right: 30px;

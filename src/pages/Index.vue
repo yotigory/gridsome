@@ -9,8 +9,7 @@
     </p>
     <hr class="my-4">
     <p>
-      NetliyとGithubを連携してまずは公開は出来たので、<br>次のゴールはWordPressと連携してBlogをHeadlessで更新する！です。
-    </p>
+      NetliyとGithubを連携して公開し、ページはmarkDownでBlogはWordPressでHeadlessで更新する！<br>までは出来たので次のゴールはWebhookを使ってBlogを更新するですね～</p>
     <b-button variant="info" href="https://github.com/yotigory/gridsome">Github</b-button>
   </b-jumbotron>
 

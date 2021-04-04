@@ -8,6 +8,7 @@
           <b-navbar-nav>
             <b-nav-text><g-link class="nav-link" to="/about/">わたしについて</g-link></b-nav-text>
             <b-nav-text><g-link class="nav-link" to="/step/">Gridsomeについて</g-link></b-nav-text>
+            <b-nav-text><g-link class="nav-link" to="/shopify/">Shopifyについて</g-link></b-nav-text>
             <b-nav-text><g-link class="nav-link" to="/blog/">Blog</g-link></b-nav-text>
           </b-navbar-nav>
         </b-collapse>
