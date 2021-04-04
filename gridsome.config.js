@@ -27,6 +27,15 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'ShopifyPost', // 必須。GraphQL上で扱う型定義
+        baseDir: './content/shopify', // 記事となるmarkdownファイルを置くディレクトリ
+        pathPrefix: '/shopify', // URLになるパス。必須ではない。
+        template: './src/templates/ShopifyPost.vue' // 記事ページのVueコンポーネントファイルの指定
+      }
+    },
+    {
       use: '@gridsome/plugin-google-analytics',
       options: {
         id: 'UA-180466873-1'
