@@ -7,14 +7,7 @@
     <p class="h6 text-right">更新日：{{ $page.shopifyPost.updatedAt }}</p>
     </div>
     <VueRemarkContent />
-  <div class="row mt-5">
-    <div class="col">
-      <p v-if="$page.shopifyPost.prevpage !== null" class="d-flex align-items-center"><b-icon-arrow-left-circle-fill font-scale="2" class="mr-2"></b-icon-arrow-left-circle-fill font-scale="2"><a :href="'/shopify/'+ $page.shopifyPost.prevpage + '/'">前のページへ</a></p>
-    </div>
-    <div class="col">
-      <p v-if="$page.shopifyPost.nextpage !== null" class="d-flex align-items-center justify-content-end"><a :href="'/shopify/'+ $page.shopifyPost.nextpage + '/'">次のページへ</a><b-icon-arrow-right-circle-fill font-scale="2" class="ml-2"></b-icon-arrow-right-circle-fill font-scale="2"></p>
-    </div>
-  </div>
+
   <p class="d-flex align-items-center justify-content-center"><b-icon-arrow-up-circle-fill font-scale="2" class="mr-2"></b-icon-arrow-up-circle-fill font-scale="2"><a href="/shopify/">目次ページに戻る</a></p>
   </article>
   </Layout>
