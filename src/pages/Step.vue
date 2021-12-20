@@ -80,7 +80,7 @@ export default {
   border-radius: 0;
 }
 .Step .jumbotron.border-info{
-  border-color: #887E89!important;;
+  border-color: #887E89!important;
 }
 .Step .jumbotron::after{
   position: absolute;
