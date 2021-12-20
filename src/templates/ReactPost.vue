@@ -9,10 +9,10 @@
     <VueRemarkContent />
   <div class="row mt-5">
     <div class="col">
-      <p v-if="$page.reactPost.prevpage !== null" class="d-flex align-items-center"><b-icon-arrow-left-circle-fill font-scale="2" class="mr-2"></b-icon-arrow-left-circle-fill font-scale="2"><a :href="'/react/'+ $page.reactPost.prevpage + '/'">前のページへ</a></p>
+      <p v-if="$page.reactPost.prevpage !== 0" class="d-flex align-items-center"><b-icon-arrow-left-circle-fill font-scale="2" class="mr-2"></b-icon-arrow-left-circle-fill font-scale="2"><a :href="'/react/'+ $page.reactPost.prevpage + '/'">前のページへ</a></p>
     </div>
     <div class="col">
-      <p v-if="$page.reactPost.nextpage !== null" class="d-flex align-items-center justify-content-end"><a :href="'/react/'+ $page.reactPost.nextpage + '/'">次のページへ</a><b-icon-arrow-right-circle-fill font-scale="2" class="ml-2"></b-icon-arrow-right-circle-fill font-scale="2"></p>
+      <p v-if="$page.reactPost.nextpage !== 0" class="d-flex align-items-center justify-content-end"><a :href="'/react/'+ $page.reactPost.nextpage + '/'">次のページへ</a><b-icon-arrow-right-circle-fill font-scale="2" class="ml-2"></b-icon-arrow-right-circle-fill font-scale="2"></p>
     </div>
   </div>
   <p class="d-flex align-items-center justify-content-center"><b-icon-arrow-up-circle-fill font-scale="2" class="mr-2"></b-icon-arrow-up-circle-fill font-scale="2"><a href="/react/">目次ページに戻る</a></p>
@@ -28,6 +28,8 @@
       tag
       createdAt (format: "YYYY年M月D日")
       updatedAt (format: "YYYY年M月D日")
+      nextpage
+      prevpage
       content
     }
   }
