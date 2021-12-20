@@ -36,6 +36,15 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'ReactPost', // 必須。GraphQL上で扱う型定義
+        baseDir: './content/react', // 記事となるmarkdownファイルを置くディレクトリ
+        pathPrefix: '/react', // URLになるパス。必須ではない。
+        template: './src/templates/ReactPost.vue' // 記事ページのVueコンポーネントファイルの指定
+      }
+    },
+    {
       use: '@gridsome/plugin-google-analytics',
       options: {
         id: 'UA-180466873-1'
@@ -77,6 +86,10 @@ module.exports = {
             priority: 0.5
           },
           '/shopify/*': {
+            changefreq: 'weekly',
+            priority: 0.5
+          },
+          '/react/*': {
             changefreq: 'weekly',
             priority: 0.5
           },
