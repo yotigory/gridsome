@@ -28,8 +28,6 @@
       tag
       createdAt (format: "YYYY年M月D日")
       updatedAt (format: "YYYY年M月D日")
-      nextpage
-      prevpage
       content
     }
   }
