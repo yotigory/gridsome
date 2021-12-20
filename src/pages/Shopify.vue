@@ -80,7 +80,7 @@ export default {
   border-radius: 0;
 }
 .Shopify .jumbotron.border-info{
-  border-color: #0E2746!important;;
+  border-color: #887E89!important;
 }
 .Shopify .jumbotron::after{
   position: absolute;
@@ -89,7 +89,7 @@ export default {
   left:7px;
   right: -7px;
   bottom: -7px;
-  background-color: #0E2746;
+  background-color: #887E89;
   z-index: -99;
 }
 
