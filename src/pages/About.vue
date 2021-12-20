@@ -5,7 +5,7 @@
     <h1>わたしについて</h1>
     <hr class="my-4">
     <g-image src="~/assets/img/yotigory_01.png" width="200" class="mx-auto d-block  mt-5 mb-5" alt="よちごりーのアイコン"/>
-    <p>Web制作会社でHTML,CSS,JSやってます。最近はVue.js楽しいですね～<br>とはいえまだまだわからないことが多いです (;^_^A</p>
+    <p>Web制作会社でHTML,CSS,JS,PHP,WordPress…いろいろやってますw。最近はReact楽しいですね～<br>とはいえまだまだわからないことが多いです (;^_^A</p>
     <p>テクノ図工部、カメラとお散歩部、チェアリング部。<br>趣味は睡眠。みんなでワイワイ飲んだりするのが好きです♪</p>
     <p>気分でフラリとおでかけします。</p>
     <p><a class="btn btn-outline-info mr-3" href="https://www.facebook.com/yoshiko.sarakai">Facebook</a>
