@@ -7,8 +7,9 @@
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
             <b-nav-text><g-link class="nav-link" to="/about/">わたしについて</g-link></b-nav-text>
-            <b-nav-text><g-link class="nav-link" to="/step/">Gridsomeについて</g-link></b-nav-text>
-            <b-nav-text><g-link class="nav-link" to="/shopify/">Shopifyについて</g-link></b-nav-text>
+            <b-nav-text><g-link class="nav-link" to="/step/">Gridsome について</g-link></b-nav-text>
+            <b-nav-text><g-link class="nav-link" to="/react/">React について</g-link></b-nav-text>
+            <b-nav-text><g-link class="nav-link" to="/shopify/">Shopify について</g-link></b-nav-text>
             <b-nav-text><g-link class="nav-link" to="/blog/">Blog</g-link></b-nav-text>
           </b-navbar-nav>
         </b-collapse>
