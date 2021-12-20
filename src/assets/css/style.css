@@ -15,7 +15,8 @@ body {
 }
 .Step .Bgimg,
 .Blog .Bgimg,
-.Shopify .Bgimg{
+.Shopify .Bgimg,
+.React .Bgimg{
   position: absolute;
   top:-50px;
   right: 30px;
