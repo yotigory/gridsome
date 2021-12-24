@@ -39,7 +39,7 @@ export default {
         {
           key: 'description',
           name: 'description',
-          content: this.$page.wordPressPost.title+'の記事ページです。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
+          content: this.$page.wordPressPost.title+'の記事ページです。 | Blog | 軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
           },
         {
           key: 'og:url',
@@ -49,12 +49,12 @@ export default {
         {
           key: 'og:title',
           property: 'og:title',
-          content: this.$page.wordPressPost.title + ' | ' + this.$static.metadata.siteName,
+          content: this.$page.wordPressPost.title + ' | Blog |' + this.$static.metadata.siteName,
         },
         {
           key: 'og:description',
           property: 'og:description',
-          content: this.$page.wordPressPost.title+'の記事ページです。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
+          content: this.$page.wordPressPost.title+'の記事ページです。 | Blog | 軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
         },
       ]
     }

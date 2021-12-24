@@ -53,7 +53,7 @@ export default {
         {
           key: 'description',
           name: 'description',
-          content: this.$page.reactPost.title+'の記事ページです。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
+          content: this.$page.reactPost.title+'の記事ページです。 | React・JavaScript | 軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
           },
         {
           key: 'og:url',
@@ -63,12 +63,12 @@ export default {
         {
           key: 'og:title',
           property: 'og:title',
-          content: this.$page.reactPost.title + ' | ' + this.$static.metadata.siteName,
+          content: this.$page.reactPost.title + ' | React・JavaScript | ' + this.$static.metadata.siteName,
         },
         {
           key: 'og:description',
           property: 'og:description',
-          content: this.$page.reactPost.title+'の記事ページです。軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
+          content: this.$page.reactPost.title+'の記事ページです。 | React・JavaScript | 軽いノリで「Gridsome」やってみっか！というスタンスで始めています。',
         },
       ]
     }
