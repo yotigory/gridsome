@@ -2,7 +2,7 @@
   <Layout>
   <article class="React">
     <b-jumbotron bg-variant="white" text-variant="info" border-variant="info">
-    <h1>React について</h1>
+    <h1>React / JS について</h1>
     <p>調べたことやったことを忘れないようにメモっときます。</p>
     <hr class="my-4">
       <ul>
