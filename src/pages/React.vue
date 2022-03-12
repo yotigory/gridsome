@@ -16,7 +16,7 @@
 
 <page-query>
   query {
-    reactlist: allReactPost(sortBy: "createdAt", order: ASC)  {
+    reactlist: allReactPost(sortBy: "createdAt", order: DESC)  {
       edges {
         node {
           id

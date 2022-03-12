@@ -16,7 +16,7 @@
 
 <page-query>
   query {
-    steplist: allStepPost(sortBy: "createdAt", order: ASC)  {
+    steplist: allStepPost(sortBy: "createdAt", order: DESC)  {
       edges {
         node {
           id

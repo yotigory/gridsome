@@ -16,7 +16,7 @@
 
 <page-query>
   query {
-    shopifylist: allShopifyPost(sortBy: "createdAt", order: ASC)  {
+    shopifylist: allShopifyPost(sortBy: "createdAt", order: DESC)  {
       edges {
         node {
           id

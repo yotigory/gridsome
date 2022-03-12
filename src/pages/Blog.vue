@@ -23,7 +23,7 @@
 
 <page-query>
   query {
-    diaryPostlist: allDiarylist(sortBy: "createdAt", order: ASC)  {
+    diaryPostlist: allDiarylist(sortBy: "createdAt", order: DESC)  {
       edges {
         node {
           id
