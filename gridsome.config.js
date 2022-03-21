@@ -45,6 +45,15 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'PressPost', // 必須。GraphQL上で扱う型定義
+        baseDir: './content/press', // 記事となるmarkdownファイルを置くディレクトリ
+        pathPrefix: '/press', // URLになるパス。必須ではない。
+        template: './src/templates/PressPost.vue' // 記事ページのVueコンポーネントファイルの指定
+      }
+    },
+    {
       use: '@gridsome/plugin-google-analytics',
       options: {
         id: 'UA-180466873-1'
@@ -90,6 +99,10 @@ module.exports = {
             priority: 0.5
           },
           '/react/*': {
+            changefreq: 'weekly',
+            priority: 0.5
+          },
+          '/press/*': {
             changefreq: 'weekly',
             priority: 0.5
           },
